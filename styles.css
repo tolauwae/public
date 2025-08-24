@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
+
+@font-face {
+    font-family: "Panno";
+    src: local("UGent Panno Text");
+}
+
+.title,
+.title h1,
+.title h2,
+.title h3,
+.title h4,
+.title h5,
+.title h6 {
+    font-family: "Panno", sans-serif;
+    text-transform: none;
+    color: #1E64C8;
+    font-weight: normal;
+}
+
+.normal h1 {
+    font-family: "STIX Two Text", serif;
+    font-style: italic;
+}
+
+.reveal h1 {
+    font-size: 52pt;
+    text-transform: none;
+}
+
+.title h2 {
+    font-style: italic;
+}
+
+.reveal h2 {
+    font-size: 21pt;
+    text-transform: none;
+}
+
+.slide-background.blue {
+    background-color: #1E64C8;
+}
+
+.blue h1, .blue h2 {
+    color: white;
+}
+
+video {
+    object-fit: fill;
+}
+
+.slide-background.dotted {
+    background-color: #ffffff;
+    opacity: 0.9;
+    background-image: radial-gradient(#1E64C8 0.05vw, transparent 0.05vw), radial-gradient(#1E64C8 0.05vw, #ffffff 0.05vw);
+    background-size: 4vw 4vw;
+    background-position: 0 0, 2vw 2vw;
+}
+
+.dim {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.highlight {
+    font-weight: bold;
+    color: white;
+}
+
+span.light {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.shadow {
+    box-shadow: 0 8px 13px 0 rgba(0, 0, 0, 0.2), 0 4px 16px 0 rgba(0, 0, 0, 0.19) !important;
+}
