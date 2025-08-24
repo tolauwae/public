@@ -1,0 +1,15 @@
+.fragment.blur {
+    filter: blur(5px);
+}
+.fragment.blur.visible {
+    filter: none;
+}
+
+.fragment.dim {
+    opacity: 1.0;
+    visibility: inherit;
+}
+
+.fragment.dim.visible {
+    opacity: 0.33 !important;
+}
