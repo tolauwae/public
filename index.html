@@ -65,10 +65,12 @@
                      alt="Clion"/>
 
                 <!-- Stepping through program -->
-                <video class="shadow fragment frame"
+                <video loop
+                       autoplay
+                       class="shadow fragment frame"
                        data-fragment-index="1"
-                       style="background-color: #eff1f5; width: 600px"
-                       src="static/clion-breakpoint.png"></video>
+                       style="background-color: #eff1f5; max-width: 650px"
+                       src="static/clion-debugging.mp4"></video>
 
                 <img class="shadow fragment rounded"
                      data-fragment-index="2"
@@ -89,7 +91,7 @@
             <!-- Papers -->
             <div class="r-stack">
                 <img class="shadow pdf"
-                     style="margin-left: 5vw; margin-top: 2vw"
+                     style="margin-left: 5vw; margin-top: 2vw; padding-bottom: 5pt"
                      src="static/formalize-3.png"
                      alt="Microsoft Word"/>
 
@@ -177,6 +179,15 @@ WebAssembly modules.</p></span>
             <div class="absolute attribution">Photo by <b>Vishnu Mohanan</b> on <b>Unsplash</b></div>
         </section>
 
+        <section data-background-image="static/espressifboard-dimmed.png" class="absolute" data-transition="none">
+            <img class="" data-fragment-index="3" src="static/how-to-debug4a.svg"/>
+        </section>
+
+        <section data-background-image="static/espressifboard-dimmed.png" class="absolute" data-auto-animate>
+        </section>
+
+        <!-- Schematics -->
+
         <section class="">
             <img class="" src="static/oopdebugging-requestdriven.svg"/>
             <span class="left"><p><b>Figure 4-2.</b> Request-driven out-of-place debugging.</p></span>
@@ -189,17 +200,17 @@ WebAssembly modules.</p></span>
 
         <section>
             <div class="r-stack">
-                <img class="" src="static/oopspectrum-prev.svg"/>
-                <img class="fragment" src="static/oopspectrum.svg"/>
+                <img class="fragment picture semi-fade-out" data-fragment-index="1" src="static/edward.png">
+                <div class="fragment fade-in" data-fragment-index="1"
+                     style="background: rgba(255, 255, 255, 0.5); width: 100%; height: 100%"></div>
+                <img class="fragment picture fade-in" data-fragment-index="1" src="static/edward-events.png">
             </div>
         </section>
 
         <section>
             <div class="r-stack">
-                <img class="fragment picture semi-fade-out" data-fragment-index="1" src="static/edward.png">
-                <div class="fragment fade-in" data-fragment-index="1" style="background: rgba(255, 255, 255, 0.5); width: 100%; height: 100%"></div>
-                <img class="fragment picture fade-in" data-fragment-index="1" src="static/edward-events.png">
-
+                <img class="" src="static/oopspectrum-prev.svg"/>
+                <img class="fragment" src="static/oopspectrum.svg"/>
             </div>
         </section>
 
@@ -215,7 +226,10 @@ WebAssembly modules.</p></span>
         </section>
 
         <section>
-            <iframe width="1560" height="715" src="https://www.youtube.com/embed/CPY89-oOMI0?si=8r_dhnlbXJ7vKybL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="1560" height="715" src="https://www.youtube.com/embed/CPY89-oOMI0?si=8r_dhnlbXJ7vKybL"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
 
         <section>
@@ -242,8 +256,51 @@ WebAssembly modules.</p></span>
             </div>
         </section>
 
+        <section class="chapter" data-auto-animate>
+            <h2>Chapter 6</h2>
+            <h1>Managed Testing</h1>
+        </section>
+
+        <section class="normal">
+            <div class="r-stack">
+                <img class="shadow rounded frame fragment custom dim"
+                     data-fragment-index="1"
+                     src="static/githubissue.png"
+                     alt="GitHub Issue"/>
+
+                <div class="">
+                    <img class="shadow fragment frame"
+                         data-fragment-index="2"
+                         style="background-color: white; max-width: 75%"
+                         src="static/initialcommit.png"
+                         alt="WARDuino initial commit"/>
+
+                    <img class="shadow fragment frame"
+                         data-fragment-index="1"
+                         style="background-color: rgb(246, 248, 250)"
+                         src="static/githubissue-date.png"
+                         alt="GitHub issue date"/>
+
+                </div>
+
+            </div>
+        </section>
 
 
+        <section class="normal">
+            <div class="r-stack">
+                <img class="shadow rounded fragment custom dim"
+                     data-fragment-index="1"
+                     src="static/latchoutput.png"
+                     alt="Latch Output"/>
+
+                <img class="shadow fragment frame"
+                     data-fragment-index="1"
+                     style="background-color: rgb(230, 233, 239); max-width: 20%"
+                     src="static/latchoutput-count.png"
+                     alt="Latch Output test count"/>
+            </div>
+        </section>
 
 
         <section class="blue title" data-auto-animate>

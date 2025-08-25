@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 @font-face {
     font-family: "Panno";
@@ -24,7 +24,7 @@
 }
 
 h1.sans, h2.sans, h3.sans, h4.sans, h5.sans {
-    font-family: "Source Code Pro", sans-serif;
+    font-family: "Source Sans 3", sans-serif;
     font-style: italic;
 }
 
