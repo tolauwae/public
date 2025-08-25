@@ -5,6 +5,7 @@
 
     <script type="module" src="/main.js"></script>
     <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="internal.css"/>
     <link rel="stylesheet" href="fragments.css"/>
 </head>
 <body>
@@ -14,7 +15,7 @@
 
         <section class="blue title" data-auto-animate>
             <div>
-                <h1>Foundations for Constrained <span>Debugging</span> Techniques</h1>
+                <h1>Foundations for Constrained Debugging Techniques</h1>
                 <h2>Finding software faults in constrained environments with sound out-of-place and multiverse debugging
                     techniques</h2>
             </div>
@@ -65,9 +66,9 @@
 
                 <!-- Stepping through program -->
                 <video class="shadow fragment frame"
-                     data-fragment-index="1"
-                     style="background-color: #eff1f5; width: 600px"
-                     src="static/clion-breakpoint.png"></video>
+                       data-fragment-index="1"
+                       style="background-color: #eff1f5; width: 600px"
+                       src="static/clion-breakpoint.png"></video>
 
                 <img class="shadow fragment rounded"
                      data-fragment-index="2"
@@ -92,15 +93,15 @@
                      src="static/formalize-3.png"
                      alt="Microsoft Word"/>
 
-                    <img class="shadow fragment fade-left pdf"
-                         style="margin-left: 10vw; margin-top: 4vw"
-                         src="static/formalize-2.png"
-                         alt="Microsoft Word"/>
+                <img class="shadow fragment fade-left pdf"
+                     style="margin-left: 10vw; margin-top: 4vw"
+                     src="static/formalize-2.png"
+                     alt="Microsoft Word"/>
 
-                        <img class="shadow fragment fade-left pdf"
-                             style="margin-left: 15vw; margin-top: 6vw"
-                             src="static/formalize-1.png"
-                             alt="Microsoft Word"/>
+                <img class="shadow fragment fade-left pdf"
+                     style="margin-left: 15vw; margin-top: 6vw"
+                     src="static/formalize-1.png"
+                     alt="Microsoft Word"/>
             </div>
         </section>
 
@@ -121,7 +122,9 @@
                 <img src="static/how-to-debug1a.svg"/>
                 <img class="fragment fade-out" data-fragment-index="3" src="static/how-to-debug1.svg"/>
 
-                <div class="image fragment fade-in" data-fragment-index="1"><img class="fragment fade-out" data-fragment-index="3"  src="static/how-to-debug2a.svg"/></div>
+                <div class="image fragment fade-in" data-fragment-index="1"><img class="fragment fade-out"
+                                                                                 data-fragment-index="3"
+                                                                                 src="static/how-to-debug2a.svg"/></div>
 
                 <!--                <img class="fragment fade-in-then-out" data-fragment-index="2" src="figures/how-to-debug3a.svg"/>-->
 
@@ -133,6 +136,123 @@
             </div>
         </section>
 
+        <section class="chapter">
+            <h2>Chapter 3</h2>
+            <h1>A remote debugger for WebAssembly</h1>
+        </section>
+
+        <section>
+            <div class="r-stack">
+                <img class="picture" src="static/warduino.png"/>
+            </div>
+            <span class=""><p><b>Figure.</b> An active debug session of the WARDuino VS Code plugin with the remote debugger.</p></span>
+        </section>
+
+        <section>
+            <div class="r-stack">
+                <img class="fragment fade-out" data-fragment-index="1" src="static/warduino.svg">
+                <img class="fragment fade-in-then-out" data-fragment-index="1" src="static/warduino-debugger.svg">
+                <img class="fragment fade-in-then-out" data-fragment-index="2" src="static/warduino-primitives.svg">
+                <img class="fragment fade-in-then-out" data-fragment-index="3" src="static/warduino-callback.svg">
+            </div>
+            <div class="r-stack">
+            <span class="left fragment fade-out" data-fragment-index="1"><p><b>Figure 3-1.</b> The architecture of the WARDuino virtual machine. The different components of the virtual machine are shown in red; the debugger, live code updater, callback handler, and additional
+WebAssembly modules.</p></span>
+
+                <span class="fragment fade-in-then-out" data-fragment-index="1"><p><b>(1)</b> Runtime instrumentation through a remote debugger and live code updater.</p></span>
+                <span class="fragment fade-in-then-out" data-fragment-index="2"><p><b>(2)</b> Atomic primitives to access peripherals.</p></span>
+                <span class="fragment fade-in-then-out" data-fragment-index="3"><p><b>(3)</b> Asynchronous primitives through a lightweight callback handling system.</p></span>
+            </div>
+
+        </section>
+
+        <!-- Chapter 4. Out-of-place -->
+        <section class="chapter">
+            <h2>Chapter 4</h2>
+            <h1>Stateful out-of-place debugging</h1>
+        </section>
+
+        <!-- Constraints -->
+        <section data-background-image="static/espressifboard.jpg" class="absolute" data-transition="none">
+            <div class="absolute attribution">Photo by <b>Vishnu Mohanan</b> on <b>Unsplash</b></div>
+        </section>
+
+        <section class="">
+            <img class="" src="static/oopdebugging-requestdriven.svg"/>
+            <span class="left"><p><b>Figure 4-2.</b> Request-driven out-of-place debugging.</p></span>
+        </section>
+
+        <section class="" data-transition="slide">
+            <img class="" src="static/oopdebugging-eventdriven.svg"/>
+            <span class="left"><p><b>Figure 4-10.</b> Event-driven out-of-place debugging.</p></span>
+        </section>
+
+        <section>
+            <div class="r-stack">
+                <img class="" src="static/oopspectrum-prev.svg"/>
+                <img class="fragment" src="static/oopspectrum.svg"/>
+            </div>
+        </section>
+
+        <section>
+            <div class="r-stack">
+                <img class="fragment picture semi-fade-out" data-fragment-index="1" src="static/edward.png">
+                <div class="fragment fade-in" data-fragment-index="1" style="background: rgba(255, 255, 255, 0.5); width: 100%; height: 100%"></div>
+                <img class="fragment picture fade-in" data-fragment-index="1" src="static/edward-events.png">
+
+            </div>
+        </section>
+
+        <!-- Chapter 5. Multiverse -->
+        <section class="chapter" data-auto-animate>
+            <h2>Chapter 5</h2>
+            <h1>Multiverse debugging on microcontrollers</h1>
+        </section>
+
+        <section data-auto-animate data-auto-animate-restart>
+            <img class="shadow" style="max-width: 75%" src="static/mio.png"/>
+            <p><b>Figure 5-1.</b> Screenshot of the MIO debugger debugging a small light sensor program.</p>
+        </section>
+
+        <section>
+            <iframe width="1560" height="715" src="https://www.youtube.com/embed/CPY89-oOMI0?si=8r_dhnlbXJ7vKybL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <section>
+            <div class="r-stack">
+                <img class="" style="max-width: 75%" src="static/backwardsstep.png"/>
+            </div>
+        </section>
+
+        <section>
+            <div class="r-stack">
+                <img class="" style="max-width: 75%" src="static/slide.png"/>
+            </div>
+        </section>
+
+        <section>
+            <div class="r-stack">
+                <img class="" style="max-width: 75%" src="static/theorem1.png"/>
+            </div>
+        </section>
+
+        <section>
+            <div class="r-stack">
+                <img class="" style="max-width: 75%" src="static/theorem2.png"/>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="blue title" data-auto-animate>
+            <div>
+                <h1>Foundations for Constrained Debugging Techniques</h1>
+                <h2>Finding software faults in constrained environments with sound out-of-place and multiverse debugging
+                    techniques</h2>
+            </div>
+        </section>
     </div>
 </div>
 </body>
